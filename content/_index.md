@@ -1,6 +1,5 @@
----
-title: Welcome
----
-# Welcome to my site
++++
+title = 'Home'
++++
 
-This is my homepage content in Markdown.
+Welcome to my Hugo site.

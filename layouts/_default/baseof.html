@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-    <title>{{ .Title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-    </nav>
-    {{ .Content }}
-    <footer>
-        <p>My Site Footer</p>
-    </footer>
+  <header>
+    <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 </body>
 </html>
