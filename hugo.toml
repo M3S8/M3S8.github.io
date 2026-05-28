@@ -1,3 +1,21 @@
 baseURL = 'https://m3s8.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Matt Schlobohm'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 3
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 4

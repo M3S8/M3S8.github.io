@@ -8,6 +8,7 @@
 <body>
   <header>
     <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+    {{ partial "nav.html" . }}
   </header>
   <main>
     {{ block "main" . }}{{ end }}
